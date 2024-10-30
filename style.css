@@ -5,33 +5,15 @@
 }
 body {
   box-sizing: border-box;
+  height: 100vh;
   margin: 0 0 0 30vw;
   padding: 0;
+  background-color: #fefefe;
+  font-family: system-ui, sans-serif;
 }
-
-.logo {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 80px;
-  width: 30vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 40%;
-}
-
-.logo img {
-  height: 90%;
-  width: auto;
-}
-
-.logo p {
+p {
   margin: 0;
-  font-family: "Odin";
-  font-size: 50px;
-  color: white;
 }
-
 figure {
   margin: 0;
   position: fixed;
@@ -77,4 +59,86 @@ figcaption a {
   font-family: "Odin";
   font-size: 50px;
   color: white;
+}
+
+header,
+main {
+  padding: 0;
+}
+
+header {
+  padding: 2rem 10rem 2rem 5rem;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+main {
+  /* display: flex;
+  justify-content: flex-start; */
+}
+
+form {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px 60px; */
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 60px;
+  padding: 2rem 0;
+  border-top: 0.5px solid #eeeeee;
+  box-shadow: 0px 5px 5px 0px #efefef;
+}
+legend {
+  min-width: 100%;
+  padding: 0 5rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.form-cell {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 5px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.form-cell input {
+  height: 1.5rem;
+}
+
+.submit {
+  margin-top: 2rem;
+  padding: 0 5rem;
+}
+
+.submit button {
+  width: 250px;
+  height: 3rem;
+  margin-bottom: 1em;
+  background-color: #89fcd6;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.15rem;
+  letter-spacing: 0.05rem;
+  box-shadow: 1px 1px 1px 0px #63c7a6;
+}
+
+.submit p a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1f7a5c;
 }
