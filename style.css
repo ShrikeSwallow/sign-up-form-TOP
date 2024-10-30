@@ -142,3 +142,18 @@ legend {
   font-weight: 500;
   color: #1f7a5c;
 }
+
+input {
+  border: 1px solid lightblue;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid cyan;
+  box-shadow: 0px 0px 2px 2px cyan;
+}
+
+#password:invalid,
+#password-confirmation:invalid {
+  border: 1px solid red;
+}
